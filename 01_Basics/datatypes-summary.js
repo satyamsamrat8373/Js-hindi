@@ -39,3 +39,32 @@ const myFunction = function() {
 myFunction();
 
 console.log(typeof myFunction); //typeof = function.
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Primitive Data types : (Stack) 
+// && Non-primitive : (Heap).
+
+// for Primitive: 
+
+let email = "satyam@gmail.com";
+let password = "12345";
+
+let gmail = email;
+console.log(gmail);  //satyam@gmail.com
+ gmail = "1234567";
+
+ console.log(gmail); //1234567
+ console.log(email); //satyam@gmail.com
+
+ // For Non-Primitive
+
+ let a1 = {
+            name: "Ankit",
+            age: 22
+ }
+ // Here value change in the heap original so value of age changes to 22 to 24.
+ let a2 = a1; 
+ a2.age = 24;
+ console.log(a2); //24
+ console.log(a1); //24
