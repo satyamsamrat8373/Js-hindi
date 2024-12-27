@@ -1,0 +1,21 @@
+<!-- 
+ 1. DOM: Tree Like Structure of HTML CODE is called as DOM.
+ 2. document.getElementByID() used to target Element where given ID is matching.
+  -->
+
+  <!DOCTYPE html>
+  <head>
+          <title>getELEMENTByID</title>
+  </head>
+  <body>
+       <p id="Para">Hello</p> <!-- This is called element -->
+       <button onclick="fun()">Click</button>
+      <script>
+          function fun() {
+          const target_paragraph_element = document.getElementById('Para');
+          console.log("value is :", target_paragraph_element); //HTML Element
+          target_paragraph_element.textContent = 'DOM Updated';
+          }
+      </script>
+  </body>
+  </html>
